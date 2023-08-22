@@ -12,23 +12,57 @@
         const scissor = "scissor";
 
         function getComputerChoice() {
-            const num = Math.floor(Math.random()*2);
+            const num = Math.floor(Math.random()*3);
             if (num==0){
-                console.log(rock);
-                /*return rock;*/
+                /*console.log(rock);*/
+                return rock;
             }
             else if (num==1){
-                console.log(paper);
-                /*return paper;*/
+                /*console.log(paper);*/
+                return paper;
             }
             else{
-                console.log(scissor);
-                /*return scissor;*/
+                /*console.log(scissor);*/
+                return scissor;
             }
         }
+
+        function playRound(playerselection, computerselection){
+            if (playerselection==rock && computerselection==paper){
+                console.log("You LOSE, " + paper + " beats " + rock);
+            }
+            else if (playerselection==rock && computerselection==scissor){
+                console.log("You WON, " + rock + " beats " + scissor);
+            }
+            else if (playerselection==paper && computerselection==rock){
+                console.log("You WON, " + paper + " beats " + rock);
+            }
+            else if (playerselection==paper && computerselection==scissor){
+                console.log("You LOSE, " + scissor + " beats " + paper);
+            }
+            else if (playerselection==scissor && computerselection==rock){
+                console.log("You LOSE, " + rock + " beats " + scissor);
+            }
+            else if (playerselection==scissor && computerselection==paper){
+                console.log("You WON, " + scissor + " beats " + paper)
+            }
+            else{
+                console.log("It's a TIE!");
+            }
+        }
+
+        const computerselection = getComputerChoice();
+        const playerselection = rock;
+
+        console.log(playRound(playerselection,computerselection));
+
+
+        
 
 
 
     </script>
 </body>
 </html>
+
+
