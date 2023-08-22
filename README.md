@@ -1,1 +1,1 @@
-# rock-paper-scissors
+A classic grade-school game. 
