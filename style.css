@@ -1,0 +1,91 @@
+html{
+    background-image: url(images/desert.avif);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headerone,.headertwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #556B2F;
+}
+
+.contentone,.contenttwo{
+    margin-top: 5%;
+}
+
+
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+button{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border:black;
+    border-radius: 0.5%;
+    font-size: 30px;
+}
+
+.rock{
+    background-image: url(images/rock.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.paper{
+    background-image: url(images/paper.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.scissor{
+    background-image: url(images/scissors.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contentthree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-top: 5%;
+
+}
+
+/*.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 0%;
+}*/
