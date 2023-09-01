@@ -26,6 +26,15 @@ html{
     color: #556B2F;
 }
 
+.headerthree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: .4%;
+}
+
 .contentone,.contenttwo{
     margin-top: 5%;
 }
@@ -78,8 +87,26 @@ button{
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    margin-top: 5%;
+    margin-top: 2%;
 
+}
+
+.contentfour{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 2%;
+    font-weight: 700;
+}
+
+.contentfive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 2%;
+    font-weight: 700;
 }
 
 /*.footer{
