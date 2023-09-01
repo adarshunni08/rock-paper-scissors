@@ -51,7 +51,7 @@ function playRound(playerselection, computerselection){
         contentthree.textContent = "It's a TIE!";
     }
     contentfour.textContent = "YOU:" + scoreOne + "   VS   " + "COMPUTER:" + scoreTwo;
-    /*if (scoreOne==5 || scoreTwo==5){
+    if (scoreOne==5 || scoreTwo==5){
         if (scoreOne > scoreTwo){
             contentfive.textContent = "YOU'RE SAFE!";
         }
@@ -63,7 +63,7 @@ function playRound(playerselection, computerselection){
         window.addEventListener('click', () => {
             contentfive.textContent = "";
         });
-    }*/
+    }
 }
 
 const contents = document.querySelector('.contents');
@@ -77,9 +77,9 @@ contentfour.classList.add('contentfour');
 contentfour.textContent = "YOU:" + scoreOne + "   VS   " + "COMPUTER:" + scoreTwo;
 contents.appendChild(contentfour);
 
-/*const contentfive = document.createElement('div');
+const contentfive = document.createElement('div');
 contentfive.classList.add('contentfive');
-contents.appendChild(contentfive);*/
+contents.appendChild(contentfive);
 
 const rockOption = document.querySelector('.rock');
 rockOption.addEventListener('click', () => {
